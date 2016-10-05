@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="app.js">
+    </script>
 </head>
 
 <body>
@@ -22,14 +24,23 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a href="#" onclick="openTab(event,'taskList')">Task List</a></li>
+                    <li><a href="#about" openTab(event, 'about')>About</a></li>
+                    <li><a href="#contact" openTab(event, 'contact')>Contact</a></li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
+
+    <div id="taskList" class=" container tab-content">
+        Hello Tasks
+    </div>
+    <div id="about" class="tab-content">
+        Yury Murashka
+    </div>
+    <div id="contact" class="tab-content">
+        Call me baby!
+    </div>
 
 </body>
 
